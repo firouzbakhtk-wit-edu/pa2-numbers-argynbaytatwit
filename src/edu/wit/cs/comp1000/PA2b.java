@@ -8,7 +8,7 @@ public class PA2b {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		int a,b,c;
-		System.out.println("Enter a, b, c: ");
+		System.out.printf("Enter a b c: ");
 		a = input.nextInt();
 		b = input.nextInt();
 		c = input.nextInt();
@@ -19,10 +19,12 @@ public class PA2b {
 			System.out.println("Roots: imaginary");
 		}
 		else if(d ==0){
-			System.out.println("Root = " + (double)(-b/(2*a)));
+			System.out.printf("Root: %.2f" , (double)(-b/(2*a)) +"%n");
 		}
 		else {
-			System.out.println("Roots :" + Double.toString(r1) + " and "+ Double.toString(r2));
+			System.out.printf("Roots: %.2f", r1);
+			System.out.printf(", %.2f", r2);
+			System.out.println();
 		}
 	}
 
